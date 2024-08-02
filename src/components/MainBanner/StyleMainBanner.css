@@ -1,0 +1,103 @@
+.MainBanner,
+.MainBanner .banner,
+.MainBanner .head,
+.MainBanner .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --box: 300px;
+    --banner: 180px;
+    --head: 45px;
+    --desc: 75px
+}
+
+.MainBanner {
+    width: 100%;
+    min-height: 400px;
+    gap: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.MainBanner .box {
+    width: var(--box);
+    min-height: var(--box);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #002D2E;
+    color: #fff;
+}
+
+.MainBanner p {
+    text-align: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.MainBanner .banner {
+    width: 100%;
+    height: var(--banner);
+}
+
+.MainBanner .head {
+    width: 100%;
+    height: var(--head);
+}
+
+
+.MainBanner .desc {
+    width: 100%;
+    min-height: var(--desc);
+}
+
+.MainBanner .head p span {
+    font-weight: 600;
+}
+
+.MainBanner .head p {
+    font-size: 20px;
+    color: #00CED1;
+}
+
+
+.MainBanner .desc p {
+    font-size: 13px;
+    color: #797B86;
+    font-family: "GothamLight";
+    padding-bottom: 10px;
+}
+
+
+@media screen and (max-width:1025px) {
+    :root {
+        --box: 250px;
+        --banner: 150px;
+        --head: 40px;
+        --desc: 60px
+    }
+
+    .MainBanner .head p {
+        font-size: 15px;
+    }
+
+
+    .MainBanner .desc p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:850px){
+    .MainBanner{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:450px){
+    .MainBanner{
+        padding: 50px 20px;
+    }
+}

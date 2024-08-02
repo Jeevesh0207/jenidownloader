@@ -1,0 +1,58 @@
+import React, { useEffect, useState } from "react";
+import "./StyleProgress.css";
+
+import ProgressBar from "@ramonak/react-progress-bar";
+
+// import { socket } from "../../socket";
+import { useDispatch,useSelector } from "react-redux";
+// import { downloadStatus } from "../../redux/actions";
+
+function Progress() {
+  // const dispatch = useDispatch()
+  // const [currentSize,setCurrentSize] = useState(0)
+  // const [totalSize,setTotalSize] = useState(0)
+
+  const {currentSize,totalSize}  = useSelector(state=>state.getProgress)
+
+  // useEffect(() => {
+  //   socket.on("message", (msg) => {
+  //     if(msg.convertedSize && msg.totalSize){
+  //       setCurrentSize(msg.convertedSize)
+  //       setTotalSize(msg.totalSize)
+  //     }
+  //   });
+  //   socket.on("end", (msg) => {
+  //     console.log("Video Download Complete");
+  //     if(msg.type==="finished"){
+  //       setCurrentSize(100)
+  //       dispatch(downloadStatus(false))
+  //     }
+  //   });
+  // }, [socket]);
+
+  const progressdisplay=(currentSize,totalSize)=>{
+    if(currentSize > 0 && totalSize > 0){
+      const percent = Math.floor((currentSize/totalSize)*100)
+      return percent<=100?percent:100
+    }
+    return 0
+  }
+
+  return (
+    <div className="Progress">
+      <div className="component">
+        <ProgressBar
+          completed={progressdisplay(currentSize,totalSize)}
+          maxCompleted={100}
+          bgColor="#00494A"
+          baseBgColor="#B2F1F2"
+          className="bar"
+          height="18px"
+          labelSize="12px"
+        />
+      </div>
+    </div>
+  );
+}
+
+export default Progress;

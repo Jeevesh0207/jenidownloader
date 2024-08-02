@@ -1,0 +1,6 @@
+.Download{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(0, 40, 40);
+    background: linear-gradient(180deg, rgba(0, 40, 40, 1) 0%, rgba(17, 17, 19, 1) 100%);
+}

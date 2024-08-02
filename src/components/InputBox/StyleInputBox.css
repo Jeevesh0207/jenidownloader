@@ -1,0 +1,83 @@
+
+.InputBox,
+.InputBox .linklogo,
+.InputBox .searchlogo,
+.InputBox .paste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root{
+    --logo_width:80px;
+    --paste-box:50px;
+}
+
+.InputBox{
+    width: 100%;
+    height: 60px;
+}
+
+.InputBox .container{
+    width: 900px;
+    height: 45px;
+    background-color: #00494A;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+.InputBox .linklogo{
+    width: var(--logo_width);
+    height: 100%;
+}
+
+.InputBox .container .input{
+    width: calc(100% - 2*var(--logo_width) - var(--paste-box) );
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.InputBox .container input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #00494A;
+    color: #fff;
+    font-size: 15px;
+    font-family: "GothamLight";
+}
+
+.InputBox .container input:focus{
+    outline: none;
+}
+ 
+.InputBox .container:has(input:focus) {
+    border: 1px solid #B2F1F2;
+}
+
+
+.InputBox .paste{
+    width: var(--paste-box);
+    height: 100%;
+    cursor: pointer;
+}
+
+.InputBox .searchlogo{
+    width: var(--logo_width);
+    height: 100%;
+    cursor: pointer;
+    background-color: #003B3C;
+}
+
+
+@media screen and (max-width:905px) {
+    .InputBox .container{
+        width: 95%;
+    }
+    :root{
+        --logo_width:60px
+    }
+}

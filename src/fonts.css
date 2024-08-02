@@ -1,0 +1,23 @@
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('fonts/GothamRndSSm-Bold.otf') ;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('fonts/GothamRndSSm-Book.otf') ;
+}
+@font-face {
+    font-family: 'GothamLight';
+    src: url('fonts/GothamRndSSm-Light.otf') ;
+}
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('fonts/GothamRndSSm-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Magic';
+    src: url('fonts/Kegilka.otf') ;
+}

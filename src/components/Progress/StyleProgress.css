@@ -1,0 +1,34 @@
+
+.Progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Progress{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.Progress .component{
+    width: 900px;
+}
+
+.Progress p{
+    text-align: center;
+    color: #B2F1F2;
+    margin: 10px 0;
+}
+
+.Progress .bar{
+    border: 1px solid #B2F1F2;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width:910px) {
+    .Progress .component{
+        width: 95%;
+    }
+}
