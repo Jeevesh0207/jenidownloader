@@ -1,5 +1,5 @@
 <div align="center" style="text-align: center; font-family: Arial, sans-serif; color: #333;">
-    <img src="./Picture/logo.png" width="128" height="128" style="display: block; margin: 0 auto; border-radius: 50%;"/>
+    <img src="./Picture/logo.png" width="100" height="100" style="display: block; margin: 0 auto; border-radius: 50%;"/>
     <h1 style="font-size: 2.5em; margin: 20px 0;">4K TubeSaver</h1>
     <p style="font-size: 30px; margin: 0 0 20px;">Welcome to 4K TubeSaver </p> 
   <p style="font-size: 1.2em; margin: 0 0 20px;"> Your ultimate solution for enjoying YouTube videos offline with the highest resolution and unparalleled clarity. Whether you're traveling, have limited internet access, or simply want to save your favorite content, our tool ensures you experience the best quality possible without any compromises.</p>
